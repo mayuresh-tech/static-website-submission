@@ -72,7 +72,7 @@ emailInputField.addEventListener("focus", () => {
 const postCall = (name, email) => {
     return new Promise(function (resolve, reject) {
         var req = new XMLHttpRequest();
-        req.open('post', "http://3.108.14.216:8080/ccfraud/testUser/api/create");
+        req.open('post', "http://107.20.245.92:8080/ccfraud/testUser/api/create");
         req.setRequestHeader('Content-Type', 'application/json');
         req.onload = function () {
             if (req.status == 200) {
